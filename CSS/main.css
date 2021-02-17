@@ -134,8 +134,8 @@ nav {
 {    color: var(--accent-color);
  }
 
- /* Button */
- .button {
+  /* Button */
+  .button {
     margin: 0;
     padding: 0;
     border: none;
@@ -154,6 +154,7 @@ nav {
 .filtr .container{
     display: flex;
     justify-content: center;
+    padding-top: 94px;
     border-radius: 4px;
 }
 .filtr li:not(:first-child){
@@ -167,22 +168,15 @@ margin-left: 8px;
     padding-bottom: 6px;
     padding-right: 22px;
     }
-
-
+.filtr {
+    padding-bottom: 50px;
+}
 .button:hover,
 .button.focuse{
     color: var(--hero-text-color);
     background-color: var(--accent-color);
 }
-/* Filtr &bExamples */
-.filtr{
-    padding-bottom: 94px;
-    padding-top: 94px;
-}
-.filtr .container{
-    padding-bottom: 34px;
-}
-
+/* Examples */
 .cards-list .item{
     font-weight: 700;
     font-size: 18px;
@@ -200,7 +194,7 @@ margin-left: 8px;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-   
+    padding-bottom: 94px;
     margin-left: calc(-1 * var(--card-set-gap));
   margin-top: calc(-1 * var(--card-set-gap));
     
@@ -214,8 +208,6 @@ margin-left: 8px;
         border: 1px solid #EEEEEE;  
         padding: 20px 24px; 
 }
-
-
 
 
 

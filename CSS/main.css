@@ -32,13 +32,16 @@ body{
     margin: 0;
     
     }
-ul {
+ul  {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 /* Header */
-
+header{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 .container{
     margin-left: auto;
     margin-right: auto;
@@ -49,15 +52,20 @@ ul {
    
 .main-nav{
     display: flex;
-  
 }
+header .container .main-nav{
+    align-items: center
+}
+
+
 header {
-    border: 1px solid #ECECEC
+    
+    border-bottom: 1px solid #ECECEC
 }
 nav {
     padding: 0;
     margin: 0;
-}
+  }
     
 
 .icon-web {
@@ -77,19 +85,16 @@ nav {
 }
 .logo{
     display:block;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    
     
 }
 .site-nav-list li:not(:first-child) {
     margin-left: 50px;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    
 }
 .site-nav-list li:first-child {
     margin-left: 93px;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    
 }
 .site-nav-list .list,
 .site-nav-list .current-list{
@@ -114,8 +119,7 @@ nav {
     font-weight: 500;
     letter-spacing: 0.02em;
     display:inline-block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    
 }
 
 .cont li:first-child {
@@ -150,7 +154,6 @@ nav {
 .filtr .container{
     display: flex;
     justify-content: center;
-    padding-top: 94px;
     border-radius: 4px;
 }
 .filtr li:not(:first-child){
@@ -164,15 +167,22 @@ margin-left: 8px;
     padding-bottom: 6px;
     padding-right: 22px;
     }
-.filtr {
-    padding-bottom: 50px;
-}
+
+
 .button:hover,
 .button.focuse{
     color: var(--hero-text-color);
     background-color: var(--accent-color);
 }
-/* Examples */
+/* Filtr &bExamples */
+.filtr{
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+.filtr .container{
+    padding-bottom: 34px;
+}
+
 .cards-list .item{
     font-weight: 700;
     font-size: 18px;
@@ -190,7 +200,7 @@ margin-left: 8px;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 94px;
+   
     margin-left: calc(-1 * var(--card-set-gap));
   margin-top: calc(-1 * var(--card-set-gap));
     
@@ -210,10 +220,11 @@ margin-left: 8px;
 
 
 /* Footer */
-.footer .container{
+footer{
     padding-top: 60px;
     padding-bottom: 60px;
-    padding-left: 215px;
+    
+    
 }
 .footer .adress{
       padding-top: 20px;
@@ -259,6 +270,7 @@ margin-left: 8px;
    
 }
 /* Hero */
+
 .container .hero{
     max-width: 1600px;
     max-height: 600px;
@@ -267,15 +279,16 @@ margin-left: 8px;
     outline: solid 1px tomato;
 }
 .hero-title{
-    margin-top: 120px;
+   
 }
 .hero {
     background-color: var(--background-footer-hero);
     height: 600px;
+    padding-bottom: 200px;
+    padding-top: 200px;
    }
 .box{
-
-    padding-top: 200px;
+ 
     width: 696px;
     margin-left: auto;
     margin-right: auto;
@@ -301,11 +314,14 @@ margin-left: 8px;
     }
 
 /* benefits */
-.benefits{
-    padding: 0;
-    margin: 0;
-    display: flex;
+.benefitssection{
     padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.benefits{
+       display: flex;
+    
     
 }
 .benefits > .item-list{
@@ -342,7 +358,7 @@ p {
 }
 /* About our team*/
 
-}
+
 .sectionteam li{
     outline: solid 1px blue;
     }
@@ -356,10 +372,8 @@ p {
 .container .team{
     display: flex;
     justify-content: space-between;
-  padding-bottom: 94px;  
-}
+  }
 .sectionteam .title{
-    margin-top: 188px;
     margin-bottom: 50px;
     text-align: center;
 }
@@ -372,6 +386,8 @@ p {
 
 .sectionteam{
     background-color: var(--button-back-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
     
 }
 .sectionteam .name{
@@ -387,8 +403,10 @@ p {
 }
 
 /* WhT WE DO*/
+.sectionabout{
+    padding-bottom: 94px;
+}
 .sectionabout h2{
-    padding-top: 94px;
     margin-bottom:50px;
     text-align: center;
     }
